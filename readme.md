@@ -5,7 +5,7 @@ This Python script queries two major CDN services (CDNJS and jsDelivr only).
 It is similar to the [Pelican plugin](https://github.com/patrickdung/pelican_cdn_sri)
 
 That plugin made use of global settings or global parameters so that the article/pages/templates
-could reference the JINJA2 variables. This script does not same thing but use a different approach.
+could reference the JINJA2 variables. This script does the same thing but use a different approach.
 Instead of using Pelican generators/plugin framework. This script is designed to run
 before running Pelican to generate static page. This script read an INI file and query the CDN,
 then it generate a Pelican parameter file. Users then import the parameter file in their Pelican
