@@ -73,3 +73,8 @@ If you want to use the CSS of the docs-searchbar.js, then it would be:
 - Next, include the parameter file (cdn_sri_pelicanconf.py) in the Pelican config.
 Example: add 'from cdn_sri_pelicanconf import *' to pelicanconf.py
 - Finally, run Pelican to rebuild your static pages
+
+License
+-------
+Unless the folder itself contains a LICENSE stating otherwise, all the files
+distributed here are released under the GNU AFFERO GENERAL PUBLIC LICENSE.
