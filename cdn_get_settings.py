@@ -1,6 +1,11 @@
 #!/usr/bin/python3
 
 # -*- coding: utf-8 -*-
+
+# SPDX-License-Identifier: AGPL-3.0-only
+#
+# Copyright (c) 2021 Patrick Dung
+
 from __future__ import unicode_literals
 import os, urllib.request
 from configparser import ConfigParser
