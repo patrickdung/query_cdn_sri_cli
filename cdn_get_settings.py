@@ -7,9 +7,8 @@
 # Copyright (c) 2021 Patrick Dung
 
 from __future__ import unicode_literals
-import os, urllib.request
+import os
 from configparser import ConfigParser
-import json
 
 import sys
 sys.path.insert(0, "/path-to/pelican_cdn_sri")
@@ -100,7 +99,7 @@ def transform_to_pelican_settings(cdn_result):
     #print ("DEBUG10", k,v)
     update_setting_file ('CDNSRI_'+str(k).upper().replace("-","_").replace(".","_") +"='"+ v +"'")
 
-global CDN_SRI
 cdn_result=get_cdn_sri_result()
 if (cdn_result):
+  update_setting_file ('CDN_SRI = True')
   transform_to_pelican_settings(cdn_result)
